@@ -1,11 +1,185 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Join My GMod Server</title>
-  <meta http-equiv="refresh" content="0; url=steam://connect/62.63.244.212">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>basementdwellers.net</title>
+  <meta name="description" content="Join the community, catch live Twitch moments, and launch straight into the Garry's Mod server.">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 <body>
-  <h1>Joining server...</h1>
-  <p>If nothing happens, <a href="steam://connect/62.63.244.212">click here</a>.</p>
+  <div class="page-shell">
+    <header class="topbar fade-up">
+      <div class="brand">
+        <div class="brand-mark">GM</div>
+        <div class="brand-copy">
+          <strong>basementdwellers.net</strong>
+          <span>GMod nights and game events for everyone</span>
+        </div>
+      </div>
+      <nav class="nav-links" aria-label="Primary">
+        <a href="#about">About</a>
+        <a href="#media">Media</a>
+        <a href="#community">Community</a>
+        <a href="#join">Join</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <div class="hero-copy fade-up delay-1">
+          <div class="eyebrow">GMod nights and game events</div>
+          <h1>GMod nights and game events.</h1>
+          <p>Always looking for people to join. Server is live 24/7, with more people around during events. Jump in chat and say hi!</p>
+          <div class="hero-actions">
+            <a class="button" href="steam://connect/62.63.244.212">Join Server</a>
+            <a class="button-secondary" href="join.html">Direct Join Page</a>
+            <a class="button-secondary" href="#community">Open Community Links</a>
+          </div>
+          <div class="overlay-card">
+            <div>
+              <strong>Community spotlight</strong>
+              <span>Live streams, event nights, and in-game moments from Mofker_TV and the basementdwellers.net community.</span>
+            </div>
+            <div class="status-pill">Now featuring Mofker_TV</div>
+          </div>
+          <div class="hero-stats" aria-label="Community highlights">
+            <div class="stat">
+              <strong>24/7</strong>
+              <span>Server is live around the clock</span>
+            </div>
+            <div class="stat">
+              <strong>Event Peaks</strong>
+              <span>More players are online during planned events</span>
+            </div>
+            <div class="stat">
+              <strong>Join Chat</strong>
+              <span>Meet people and squad up in Discord</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="content-grid" id="about">
+        <article class="section-card fade-up delay-1">
+          <div class="section-heading">
+            <div>
+              <h2>About basementdwellers.net</h2>
+              <p>GMod nights and other game events with a welcoming community that is always looking for new players.</p>
+            </div>
+          </div>
+          <div class="feature-grid">
+            <div class="feature">
+              <strong>Direct join flow</strong>
+              <span>The Steam connect link is still here, but users choose when to launch instead of being redirected on load.</span>
+            </div>
+            <div class="feature">
+              <strong>Community-first layout</strong>
+              <span>Discord, Twitch, highlights, and screenshots all have clear placement instead of being hidden behind one link.</span>
+            </div>
+            <div class="feature">
+              <strong>Rich media support</strong>
+              <span>You now have image areas plus a video player block that can become a Twitch embed or a hosted trailer later.</span>
+            </div>
+            <div class="feature">
+              <strong>Static hosting friendly</strong>
+              <span>Everything stays inside one HTML file for now, so deployment remains as simple as the original page.</span>
+            </div>
+          </div>
+          <ul class="server-list">
+            <li>Join link stays on the existing endpoint: <a href="steam://connect/62.63.244.212">steam://connect/62.63.244.212</a></li>
+            <li>Event screenshots and clips are updated as new community moments happen.</li>
+            <li>The page is responsive and keeps the CTAs visible on smaller screens</li>
+          </ul>
+        </article>
+
+        <aside class="community-card fade-up delay-2" id="community">
+          <div class="section-heading">
+            <div>
+              <h2>Community Links</h2>
+              <p>Join the Discord, follow Twitch, and jump directly into the server.</p>
+            </div>
+          </div>
+          <div class="social-stack">
+            <a class="social-link" href="https://discord.gg/y4b2M4w" target="_blank" rel="noreferrer noopener">
+              <div class="social-icon">D</div>
+              <div>
+                <strong>Discord</strong>
+                <span>Join the server chat for announcements, event times, and to meet other players.</span>
+              </div>
+            </a>
+            <a class="social-link" href="https://www.twitch.tv/mofker_tv" target="_blank" rel="noreferrer noopener">
+              <div class="social-icon">T</div>
+              <div>
+                <strong>Twitch</strong>
+                <span>Use this as the permanent home for livestreams, clips, highlights, and creator collabs around the server.</span>
+              </div>
+            </a>
+            <a class="social-link" href="steam://connect/62.63.244.212">
+              <div class="social-icon">J</div>
+              <div>
+                <strong>Launch Into Server</strong>
+                <span>One-click connection is still the primary action, just without forcing the user out of the page immediately.</span>
+              </div>
+            </a>
+          </div>
+        </aside>
+      </section>
+
+      <section class="media-grid" id="media">
+        <article class="video-card fade-up delay-1">
+          <div class="section-heading">
+            <div>
+              <h2>Live on Twitch</h2>
+              <p>Watch Mofker_TV live or catch the latest broadcast directly below.</p>
+            </div>
+          </div>
+          <div class="video-frame" aria-label="Mofker_TV Twitch player">
+            <iframe
+              src="https://player.twitch.tv/?channel=mofker_tv&parent=basementdwellers.net&parent=mofker.github.io&parent=localhost&parent=127.0.0.1"
+              allowfullscreen
+              scrolling="no">
+            </iframe>
+          </div>
+          <div class="video-copy">
+            <p>
+              Stream is live when Mofker_TV is broadcasting. When offline the player shows the most recent VOD on the channel.
+            </p>
+          </div>
+        </article>
+
+        <aside class="gallery-card fade-up delay-2">
+          <div class="section-heading">
+            <div>
+              <h2>Image Gallery</h2>
+              <p>Recent event moments and community highlights. Share your screenshots to be featured here.</p>
+            </div>
+          </div>
+          <div class="gallery-grid" aria-label="Community gallery">
+            <div class="gallery-item gallery-a"><span>Example Image A</span></div>
+            <div class="gallery-item gallery-b"><span>Example Image B</span></div>
+            <div class="gallery-item gallery-c"><span>Example Image C</span></div>
+            <div class="gallery-item gallery-d"><span>Example Image D</span></div>
+          </div>
+        </aside>
+      </section>
+
+      <section class="cta-banner fade-up delay-3" id="join">
+        <div>
+          <h2>Ready to join the server?</h2>
+          <p>Connect through Steam, hop into Discord, and join the next event night with the community.</p>
+        </div>
+        <div class="hero-actions">
+          <a class="button" href="steam://connect/62.63.244.212">Join Now</a>
+          <a class="button-secondary" href="https://discord.gg/y4b2M4w" target="_blank" rel="noreferrer noopener">Discord Invite</a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer-row">
+      <span>Community page for basementdwellers.net. More screenshots and clips will be added over time.</span>
+      <span><a href="https://www.twitch.tv/mofker_tv" target="_blank" rel="noreferrer noopener">Twitch</a> / <a href="https://discord.gg/y4b2M4w" target="_blank" rel="noreferrer noopener">Discord</a></span>
+    </footer>
+  </div>
 </body>
 </html>
