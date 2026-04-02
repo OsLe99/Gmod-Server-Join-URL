@@ -1,0 +1,100 @@
+:root {
+  --bg: #061018;
+  --bg-alt: #0d1e29;
+  --line: rgba(154, 203, 183, 0.24);
+  --text: #eff8f2;
+  --muted: #b6cbc0;
+  --accent: #95e06c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  color: var(--text);
+  background:
+    radial-gradient(circle at 20% 10%, rgba(149, 224, 108, 0.18), transparent 35%),
+    linear-gradient(180deg, var(--bg-alt) 0%, var(--bg) 100%);
+  display: grid;
+  place-items: center;
+  padding: 20px;
+}
+
+.join-shell {
+  width: min(920px, 100%);
+  border: 1px solid var(--line);
+  border-radius: 24px;
+  background: rgba(4, 12, 18, 0.86);
+  box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+  padding: 28px;
+  text-align: center;
+}
+
+.eyebrow {
+  margin: 0;
+  color: var(--muted);
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  font-size: 0.76rem;
+}
+
+h1 {
+  margin: 10px 0 6px;
+  font-size: clamp(2rem, 4vw, 3.2rem);
+  line-height: 1;
+}
+
+.subtitle {
+  margin: 0 0 18px;
+  color: var(--muted);
+  font-size: 1.03rem;
+}
+
+.join-gif {
+  width: 100%;
+  max-height: 420px;
+  object-fit: contain;
+  border-radius: 18px;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  background: #08131a;
+}
+
+.actions {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.button,
+.button-secondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 12px 18px;
+  border-radius: 999px;
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.button {
+  color: #08131a;
+  background: linear-gradient(135deg, var(--accent), #d8f27f);
+}
+
+.button-secondary {
+  color: var(--text);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.hint {
+  margin: 16px 0 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+}
